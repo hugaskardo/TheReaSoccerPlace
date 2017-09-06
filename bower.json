@@ -1,0 +1,30 @@
+{
+  "name": "futboll-app",
+  "description": "bower json",
+  "main": "mainfile",
+  "authors": [
+    "Hugo Camacho <hugo.camacho@ipointsystems.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node"
+  ],
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "datatables.net-dt": "^3.2.2",
+    "install": "^1.0.4",
+    "bower": "*",
+    "react-bootstrap": "^0.31.2"
+  }
+}
