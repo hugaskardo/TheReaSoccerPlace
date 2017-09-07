@@ -5,9 +5,6 @@ import TeamCard from '../components/TeamCard';
 
 
 export default class TeamPlayers extends React.Component {
-  constructor(){
-  	super();
-  }
 
   componentWillMount(){
   	const teamId = this.props.match.params.team;

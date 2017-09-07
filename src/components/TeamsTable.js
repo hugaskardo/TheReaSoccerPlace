@@ -1,6 +1,6 @@
 import React from 'react';
-import DataTable from 'datatables.net/js/jquery.dataTables.js';
 import TeamsTableRow from './TeamsTableRow';
+import DataTable from 'datatables.net/js/jquery.dataTables.js';
 
 const $ = require('jquery');
 

@@ -44,7 +44,7 @@ class TeamPlayersApi extends EventEmitter {
 
 }
 
-const teamPlayersApi = new TeamPlayersApi;
+const teamPlayersApi = new TeamPlayersApi();
 
 export default teamPlayersApi;
 

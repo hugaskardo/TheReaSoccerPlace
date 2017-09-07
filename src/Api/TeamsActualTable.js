@@ -11,7 +11,6 @@ class TeamsActualTable extends EventEmitter {
   		}
 	  	}).then((response) => response.json())
 	  	.then((responseJson) => {
-	  		console.log(responseJson)
 	  		self.setState({teams : responseJson})
 	        return responseJson;
 	      })
@@ -23,7 +22,7 @@ class TeamsActualTable extends EventEmitter {
 		}
 }
 
-const teamsActualTable = new TeamsActualTable;
+const teamsActualTable = new TeamsActualTable();
 
 export default teamsActualTable;
 

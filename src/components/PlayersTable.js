@@ -1,5 +1,4 @@
 import React from 'react';
-import DataTable from 'datatables.net/js/jquery.dataTables.js';
 import PlayerTableRow from './PlayerTableRow';
 
 const $ = require('jquery');
