@@ -6,8 +6,8 @@ export default class TeamsTableRow extends React.Component {
   getTeamid(linkParam){
     let id;
     if (linkParam) {
-      id = linkParam.slice(-2);
-      id = id.replace('/','');
+      id = linkParam.slice(-4);
+      id = id.replace( /^\D+/g, '');
     }else {
       id = "No info";
     }
