@@ -18,7 +18,7 @@ export default class Bundesliga extends React.Component {
 		if (this.state.teams.standing) {	
 	    	return (
 	    		<div className="container">
-	    			<TeamsTable teams={this.state.teams.standing}/>
+	    			<TeamsTable teams={this.state.teams.standing} leagueInfo={this.state.teams.leagueCaption}/>
 	    		</div>
 	    	);
 	  	} else {

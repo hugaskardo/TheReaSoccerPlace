@@ -16,12 +16,24 @@ export default class TeamsTable extends React.Component {
 
   render() {
     const { teams } = this.props;
+    
+    const titleElement = (
+      <div className="card navBar">
+        <div className="card-block">
+          <h4 className="card-title">League Tournament</h4>
+          <h6 className="card-subtitle mb-2 text-muted">{this.props.leagueInfo}</h6>
+        </div>
+      </div>
+    );
+
     const TeamsLiComponent = teams.map((team, index) => {
       return <TeamsTableRow key={index} {...team} />
     });
+
     
     return (
       	<div>
+          {titleElement}
   		    <table id="example" className="display" cellSpacing="0" width="100%">
   		        <thead>
   		            <tr>
@@ -33,6 +45,7 @@ export default class TeamsTable extends React.Component {
   		                <th>Lost</th>
   		                <th>GF</th>
   		                <th>GC</th>
+                      <th>Players</th>
   		            </tr>
   		        </thead>
                <tbody>
